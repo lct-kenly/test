@@ -1,0 +1,95 @@
+
+
+@media ( min-width: 740px) and (max-width: 1023px) {
+    .input-contact-half:first-child {
+        margin-right: 1.2rem;
+    }
+}
+
+
+@media (max-width: 739px) {
+    .nav {
+        display: block;
+    }
+
+    .nav li:first-child {
+        display: inline-block;
+    }
+
+    .subnav {
+        position: initial;
+        min-width: 100%;
+        background: #333;
+    }
+
+    .subnav li a {
+        color: #fff;
+    }
+
+    .subnav a {
+        padding: 1rem 5rem;
+    }
+
+    .nav > li {
+        display: block;
+    }
+
+    .header {
+        overflow: hidden;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .text-contain {
+        display: none;
+    }
+    
+    .member-items {
+        float: initial;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .topic-content > p {
+        font-size: 4rem;
+    }
+
+    .second-topic-content > p {
+        font-size: 1.5rem;
+    }
+    
+    .place-name {
+        float: initial;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .main-tour-dates {
+        height: 100%;
+        padding-bottom: 14rem;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+    
+    .input-contact {
+        width: 100%;
+        float:initial
+    }
+
+    .input-contact-half {
+        width: 100%;
+    }
+
+    .input-contact-half:first-child {
+        margin-top: 2rem;
+    }
+}

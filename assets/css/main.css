@@ -1,0 +1,539 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+    font-family: "Lato",sans-serif;
+    scroll-behavior: smooth;
+}
+
+.main {
+    width: 100%;
+}
+
+
+/* header */
+.header {
+    height: 5.4rem;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav li {
+    display: inline-block;
+    /* padding: 0 1.2rem; */
+    position: relative;
+}
+
+
+.nav > li > a {
+    font-size: 1.8rem;
+    line-height: 5.4rem;
+    padding: 0 3.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    display:inline-block
+}
+
+.nav > li:hover {
+    background: #cccccc;
+    
+}
+
+.nav >li:hover > a {
+    color: #000;
+}
+
+.nav li:hover .subnav {
+    display: block;
+}
+
+.drop-down {
+    font-size: 1.6rem;
+    padding-left: 0.4rem;
+}
+
+
+/* Subnav */
+.subnav {
+    background-color: #fff;
+    position:absolute;
+    color: #000;
+    display: none;
+    width: 17rem;
+
+}
+
+.subnav li {
+    width: 100%;
+    
+}
+
+.subnav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5rem;
+    line-height: 4.6rem;
+    padding: 0 1.8rem;
+}
+
+.subnav > li:hover {
+    background-color: #ccc;
+}
+
+/* search icon */
+
+.search-icon {
+    float: right;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 5.4rem;
+    padding: 0 2.5rem;
+}
+
+.search-icon:hover {
+    background: red;
+    cursor: pointer;
+}
+
+/* Menu icon */
+
+.menu-icon {
+    display: none;
+    float: right;
+    font-size: 2rem;
+    color: #fff;
+    line-height: 5.4rem;
+    padding: 0 2.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-icon:hover {
+    background-color: #ccc;
+}
+
+.menu-icon:hover i {
+    color: #000
+}
+
+/* Slider */
+
+.slider {
+    margin-top: 4.6rem;
+    padding-top: 50%;
+    background-image: url(https://www.w3schools.com/w3images/ny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.text-contain {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.text-heading {
+    font-size: 3rem;
+}
+
+.text-info {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+}
+
+/* About */
+
+.about-section{
+    width:100rem;
+    max-width: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1.6rem;
+}
+
+.topic-content {
+    text-align: center;
+    
+}
+
+.topic-content > p{
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-top: 15rem;
+    letter-spacing: 1rem;
+}
+
+.second-topic-content > p{
+    font-size: 2rem;
+    color: rgb(147, 146, 146);
+    font-style: italic;
+    margin: 2.5rem 0;
+}
+
+.content p{
+    font-size: 1.7rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* member */
+
+.clear{
+    clear: both;
+}
+
+
+.member-items {
+    float: left;
+    margin-top: 6rem;
+    width: calc(100%/3);
+    text-align: center;
+}
+
+.member-name p {
+    font-size: 2rem;
+    
+}
+
+.member-img img{
+    margin-top: 1.5rem;
+    width: 20rem;
+    border-radius: .6rem;
+    max-width: 100%;
+}
+
+/* Tour Dates */
+
+.main-tour-dates{
+    background-color: #000;
+    height: 110rem;
+}
+
+.tour-dates-section {
+    width:100rem;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    padding: 0 2rem;
+}
+
+.tour-dates-section .topic-content > p {
+    color: #fff;
+    padding-top: 15rem;
+}
+
+/* Tickets */
+
+.tickets-info {
+    background-color: #fff;
+    margin-top: 4rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tickets-list li {
+    font-size: 2rem;
+    padding: 1.2rem 1.5rem;
+    border-bottom: 0.1rem solid #ddd;
+    color: #757575;
+    list-style: none;
+}
+
+.tickets-list .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 0.3rem 0.4rem;
+    margin-left: 1.6rem;
+}
+
+.tickets-list .quatity {
+    background-color: #000;
+    float: right;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+/* Places */
+
+.places-list {
+    margin-top: 3.2rem;
+    margin-left: -.8rem;
+    margin-right: -.8rem;
+}
+
+.place-name {
+    float: left;
+    width: calc(100%/3);
+    padding: 0 .8rem;
+}
+
+.place-name img {
+    width: 100%;
+    display: block;
+}
+
+.place-name img:hover {
+    opacity: .3;
+}
+
+.place-info {
+    background-color: #fff;
+    padding: 3rem;
+}
+
+.place-info h3 {
+    margin-top: 1.5rem;
+    font-size: 2.3rem;
+}
+
+.place-info .date {
+    margin-top: 1.5rem;
+    font-size: 1.9rem;
+    font-style: italic;
+    opacity: .5;
+}
+
+.place-info .place-content {
+    margin: 1.5rem 0;
+    font-size: 1.9rem;
+}
+
+.buy-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 1.3rem 1.8rem;
+    font-size: 2rem;
+}
+
+.buy-btn:hover {
+    background-color: #ccc;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+/* Contact */
+
+.main-contact {
+    /* margin-bottom: 20rem; */
+}
+
+.contact-form {
+    margin-top: 5rem;
+}
+
+.contact-info {
+    float:left; 
+    width: 50%;
+    font-size: 2rem;
+}
+
+.contact-info p {
+    margin-top: 1rem;
+}
+
+.input-contact {
+    float:left; 
+    width: 50%;
+}
+
+.input-contact-half {
+    width: 48%;
+    float: left;
+    padding: 1.2rem;
+}
+
+.input-contact-half:first-child { 
+    margin-right: 1.8rem;
+}
+
+
+.input-contact-full {
+    width: 100%;
+    padding: 1.2rem;
+    margin: 2rem 0;
+}
+
+.contact-btn {
+    padding: 1rem 2rem;
+    font-size: 1.8rem;
+    float: right;
+    background: #000;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background: #ccc;
+    color: #000;
+}
+
+
+
+/* Map */
+.map-content img {
+    margin-top: 20rem;
+    width: 100%;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 7rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.social-icons {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    opacity: .5;
+    padding-bottom: 1rem;
+}
+
+.social-icons i:hover  {
+    opacity: .4;
+}
+
+.source {
+    padding: 1.5rem;
+    opacity: .6;
+    
+}
+
+.source a {
+    color: #757575;
+}
+
+/* Modal */
+
+.js-modal.open {
+    display: flex;
+}
+
+.modal {
+    
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .3);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.content-modal {
+    display: flexbox;
+    background-color: #fff;
+    width: 110rem;
+    max-width: calc(100% - 3.2rem);
+    min-height: 20rem;
+    animation: modalStyle ease 0.5s;
+}
+
+.header-modal{
+    background-color: #009688;
+    padding: 2em;
+    text-align: center;
+    font-size: 3.6rem;
+    color: #fff;
+    letter-spacing: .5rem;
+    position: relative;
+}
+
+.close-modal {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 1.6rem 1rem 2rem;
+}
+
+.close-modal:hover {
+    background-color: red;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-input {
+    width: 100%;
+    margin: 2rem 0;
+    height: 5rem;
+    padding: 1rem ;
+    font-size: 2rem;
+}
+
+.label-modal {
+    font-size: 2rem;
+}
+
+.body-modal{
+    padding: 2rem;
+}
+
+.btn-submit-modal {
+    width: 100%;
+    height: 6.5rem;
+    color: #fff;
+    background-color: #009688;
+    border: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.btn-submit-modal:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.footer-modal{
+    padding: 2rem 2.5rem;
+    text-align: right;
+    font-size: 2rem;
+}
+
+.footer-modal a {
+    color:#2196F3;
+}
+
+@keyframes modalStyle {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
